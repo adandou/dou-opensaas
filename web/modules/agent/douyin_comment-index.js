@@ -1,0 +1,1 @@
+// $('#comment-modal').modal();

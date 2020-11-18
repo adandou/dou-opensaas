@@ -1,0 +1,464 @@
+/*移动端项目*/
+a, abbr, address, article, aside, audio, b, blockquote, body, caption, cite, code, dd, del, dfn, dialog, div, dl, dt, em, fieldset, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, small, span, strong, sub, sup, tfoot, th, thead, time, tr, ul, var, video {
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background:#f5f5f5;
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust:none;
+    font-family:Tahoma,Arial,"Helvetica Neue",Helvetica,'Hiragino Sans GB',sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+html{
+    -webkit-text-size-adjust: none;width:100%;
+    font-size:20px;
+}
+body * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-weight: normal;
+    /*-webkit-font-smoothing: antialiased;*/
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+img {
+    -ms-interpolation-mode: bicubic;
+    vertical-align: middle;
+    font-size: 0;
+}
+h1,h2,h3,h4,h5,h6,b{font-size:100%;font-weight:normal;}
+select,input{vertical-align:middle}
+input:focus,button:focus{outline: none;}
+.clear { display:block !important; clear:both !important; float:none !important; margin:0 !important; padding:0 !important; height:0; line-height:0; font-size:0; overflow:hidden;}
+.clearfix { zoom:1;}
+.clearfix:after { content:""; display:block; clear:both; height:0; }
+.red{
+    color:#DD2727;
+}
+/* 相框列表 */
+.item-list{
+    padding: .5rem;
+}
+.item-list .item {
+    float: left;
+    width:7.25rem;
+    height: 7.25rem;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+}
+.item-list .item:nth-child(2n+1) {
+    margin:0 .5rem 0.5rem 0;
+}
+/* 相框预览页*/
+.kuang{
+    padding-bottom: 40px;
+}
+.kuang article{
+    position: relative;
+    text-align: center;
+}
+
+.kuang article .photo{
+  height: 16rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:16rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.swiper-slide {
+        height: 16rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size:100% 100%;
+    }
+.swiper-slide a{
+    width:16rem;
+    height:16rem;
+    display: block;
+    background:#ddd;
+}
+.kuang_detail{
+  padding:0.5rem;
+  border-bottom: 1px solid #e5e5e5;
+  overflow:hidden;
+}
+.cbtn a{
+    display: block;
+    width:7.25rem;
+    height:1.7rem;
+    border:1px solid #f96a02;
+    text-align: center;
+    line-height: 1.7rem;
+    font-size:0.8rem;
+    color:#f96a02;
+    border-radius: 4px;
+}
+.cbtn a:active{
+    background:#f96a02;
+    color:#fff;
+}
+.cbtn a.sendpic{
+    float:left;
+}
+.cbtn a.selpic{
+    float:right;
+}
+.guige{
+    padding:0.5rem;
+    font-size:14px;
+}
+.guige .k_size{
+    border-bottom:1px solid #e5e5e5;
+    margin-bottom: 0.5rem;
+}
+.guige h2 {
+    color: #666;
+    margin-bottom: .5em;
+}
+.guige .k_size label {
+    -webkit-tap-highlight-color: transparent;
+    display: inline-block;
+    border: 1px solid #e5e5e5;
+    background-color: #fff;
+    min-width: 2em;
+    padding: .4em 1.2em;
+    margin: 0 .5em .5em 0;
+    max-width: 100%;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+.guige .k_size label.checked{
+    border-color: #b10000;
+}
+.guige h2 .price{
+    color:#DD2727;
+    padding-left:10px;
+}
+.guige h2 input.setprice{
+    width:70px;
+    margin:0 5px 0 5px;
+    text-align: center;
+    border:none;
+    line-height: 30px;
+    border: 1px solid #ddd;
+    background: transparent;
+}
+.number-control {
+    border: 1px solid #b3b3b3;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    width:122px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+.guige > div{
+    border-bottom:1px solid #e5e5e5;
+    margin-bottom: 0.5rem;
+}
+.number-control button{
+    display: block;
+    float: left;
+    height: 34px;
+    border: 0px;
+    background-color: #fff;
+    color:#5f646e;
+    font-family: helvetica;
+}
+.number-control button:focus,.number-control input:focus{
+    outline: none;
+}
+.number-control input{
+    display: block;
+    float: left;
+    height: 34px;
+    width:50px;
+    border: 0px;
+    text-indent: 14px;
+}
+.number-control .decrease{
+    width: 32px;
+    font-size:20px;
+    font-weight: 700;
+    border-right: 1px solid #b3b3b3;
+}
+.number-control .increase{
+    width: 32px;
+    font-size:20px;
+    font-weight: 700;
+    border-left: 1px solid #b3b3b3;
+}
+.number-control .num{
+    min-width:55px;
+    text-align: center;
+}
+.selradio label{
+    position: relative;
+}
+.selradio label:first-child{
+     margin-right:25px;
+}
+.selradio label i{
+    display: inline-block;
+    width:16px;
+    height: 16px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #fff;
+    border:1px solid #f96a02;
+    position: absolute;
+    left:-3px;
+    top:3px;
+}
+.selradio{
+    padding-bottom: 0.5rem;
+}
+.selradio label i.active{
+    border:5px solid #f96a02;
+}
+.selradio label input{
+    margin-right:5px;
+    vertical-align: 1px;
+    opacity: 0;
+}
+.address{
+    position: relative;
+}
+.address .addinfo p{
+    line-height: 24px;
+    padding-right:0.5rem;
+    padding-bottom: 0.5rem;
+}
+.address i{
+    width:6.5px;
+    height: 12px;
+    display: block;
+    position: absolute;
+    right:0;
+    top:50%;
+    margin-top:-6px;
+    background: url(../images/shad.png) no-repeat center center;
+    background-size: cover;
+}
+.option{
+    position:fixed;
+    bottom:0;
+    border-top: 1px solid #e5e5e5;
+    text-align: center;
+    width: 100%;
+}
+.option a{
+    height: 48px;
+    border: 0;
+    line-height: 48px;
+    font-size: 18px;
+    color: #fff;
+    width:100%;
+    display: block;
+    background:#46bf18;
+    text-decoration: none;
+}
+/* 订单详情 */
+.order{
+    padding-bottom: 45px;
+}
+.order .pic{
+    width:100%;
+    margin-bottom: 1rem;
+    height: 16rem;
+    position: relative;
+    min-height: 16rem;
+}
+.order .pic img{
+    width:auto;
+    height: 16rem;
+}
+.order .pic .kuangpic{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    height: 16rem;
+    width:16rem;
+}
+.order_info{
+    padding:0 0.5rem 0.5rem;
+    font-size:14px;
+    color:#666;
+}
+.order_info_1{
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+}
+.order_info_1 h2{
+    display: inline-block;
+    font-weight: normal;
+}
+.order_info_1 h2 label.w43{
+    width:43px;
+    display: inline-block;
+}
+.order_info_1 h2 span.mr40{
+    margin-right: 40px;
+    display: inline-block;
+}
+
+/* 分享页面 */
+.people img{
+    width:30px;
+    height: 30px;
+    float:left;
+    margin-right: 8px;
+}
+.people{
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+.people .numtime{
+    float:right;
+}
+.people .numtime span{
+    margin-right: 8px;
+}
+.people .name{
+    width: 90px;
+    display: inline-block;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+}
+.people .peopleinfo{
+    border-bottom:1px solid #e5e5e5;
+    line-height: 30px;
+    padding-top:0.5rem;
+}
+.paybtn{
+    width:80%;
+    margin:0 auto;
+    line-height: 34px;
+    background:#46bf18;
+    border-radius: 4px;
+    text-align: center;
+}
+.paybtn a{
+    text-decoration: none;
+}
+.code{
+    text-align: center;
+    padding-top:1rem;
+}
+.code img{
+    width:100px;
+    height: 100px;
+}
+/* 我的订单 */
+.myorder{
+    padding:0.5rem;
+}
+.myorder a{
+    display: block;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+.myorder img {
+    width:80px;
+    height: 80px;
+}
+.myorder .myorder_info{
+    float:left;
+    color:#333;
+    position: absolute;
+    font-size:14px;
+    padding-left:90px;
+    top:0;
+}
+.myorder .myorder_info h1{
+    line-height: 20px;
+}
+/* 照片预览页 */
+.my_item-list{
+    padding:.5rem;
+}
+.my_item-list .item{
+    width:7.25rem;
+    height: 7.25rem;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+}
+.my_item-list li i.close{
+    background: url(../images/close.png) no-repeat center center;
+    width:24px;
+    height: 24px;
+    background-size: 24px 24px;
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    opacity: 0.9;
+}
+.my_item-list li i.nocheck{
+    background: url(../images/noradio1.png) no-repeat center center;
+    width:24px;
+    height: 24px;
+    background-size: 24px 24px;
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    opacity: 0.9;
+}
+.my_item-list li{
+    float: left;
+    width:7.25rem;
+    height: 7.25rem;
+    position: relative;
+}
+.my_item-list li:nth-child(2n+1) {
+    margin:0 .5rem 0.5rem 0;
+}
+.my_item-list .item img{
+    width:100%;
+    height: 100%;
+}
+.right_top{
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
